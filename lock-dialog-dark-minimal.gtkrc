@@ -1,0 +1,28 @@
+style "lock-dialog-default"
+{
+  engine "murrine"
+  {
+  }
+
+  bg[NORMAL] = "#111"
+  fg[NORMAL] = "#F5F5F5"
+  base[INSENSITIVE] = "#000000"
+  base[NORMAL] = "#000000"
+  text[NORMAL] = "#FFFFFF"
+}
+class "GtkWidget" style "lock-dialog-default"
+
+style "lock-dialog-button"
+{
+  bg[NORMAL] = "#000000"
+  bg[PRELIGHT] = "#000000"
+  fg[NORMAL] = "#FFFFFF"
+  fg[PRELIGHT] = "#B5B5B5"
+  bg[ACTIVE] = "#000000"
+  bg[SELECTED] = "#000000"
+  bg[INSENSITIVE] = "#000000"
+  font_name = "Droid Sans 8"
+}
+widget_class "*.<GtkButton>*" style "lock-dialog-button"
+
+
